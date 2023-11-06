@@ -27,7 +27,7 @@ int main()
 		std::cout << "Enter a message to be encrypted:  ";
 		std::getline(std::cin, input);
 		Encryption e(input);
-		std::cout << "What would you like to do?\n1. Encrypt String\n2. Decrypt String" << std::endl;
+		std::cout << "Enter 1 to encrypt a string, enter 2 to decrypt a string." << std::endl;
 		std::getline(std::cin, temp);
 		operationChoice = stoi(temp);
 

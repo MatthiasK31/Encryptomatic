@@ -127,7 +127,10 @@ void Encryption::decryptString()
 //getter methods
 string Encryption::getEncrypted()
 {
-	return encrypted;
+    string returnE;
+    for(char c : encrypted)
+        returnE += tolower(c);
+	return returnE;
 }
 
 string Encryption::getDecrypted()
